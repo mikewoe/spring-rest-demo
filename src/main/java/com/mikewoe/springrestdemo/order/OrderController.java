@@ -1,4 +1,4 @@
-package com.mikewoe.springrestdemo;
+package com.mikewoe.springrestdemo.order;
 
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceSupport;

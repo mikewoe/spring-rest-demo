@@ -1,12 +1,15 @@
-package com.mikewoe.springrestdemo;
+package com.mikewoe.springrestdemo.employee;
 
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Data
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 @Entity
 public class Employee {
 
@@ -15,10 +18,7 @@ public class Employee {
     private String lastName;
     private String role;
 
-    Employee() {
-    }
-
-    Employee(String firstName, String lastName, String role) {
+    public Employee(String firstName, String lastName, String role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.role = role;

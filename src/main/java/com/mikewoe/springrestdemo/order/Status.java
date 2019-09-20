@@ -1,4 +1,4 @@
-package com.mikewoe.springrestdemo;
+package com.mikewoe.springrestdemo.order;
 
 public enum Status {
     IN_PROGRESS,

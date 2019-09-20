@@ -1,6 +1,8 @@
-package com.mikewoe.springrestdemo;
+package com.mikewoe.springrestdemo.order;
 
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Data
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 @Table(name = "CUSTOMER_ORDER")
 public class Order {
 
@@ -17,10 +20,7 @@ public class Order {
     private String description;
     private Status status;
 
-    Order() {
-    }
-
-    Order(String description, Status status) {
+    public Order(String description, Status status) {
         this.description = description;
         this.status = status;
     }

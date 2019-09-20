@@ -1,4 +1,4 @@
-package com.mikewoe.springrestdemo;
+package com.mikewoe.springrestdemo.employee;
 
 public class EmployeeNotFoundException extends RuntimeException {
 

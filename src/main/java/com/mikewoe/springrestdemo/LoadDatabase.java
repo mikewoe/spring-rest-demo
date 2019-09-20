@@ -1,5 +1,10 @@
 package com.mikewoe.springrestdemo;
 
+import com.mikewoe.springrestdemo.employee.Employee;
+import com.mikewoe.springrestdemo.employee.EmployeeRepository;
+import com.mikewoe.springrestdemo.order.Order;
+import com.mikewoe.springrestdemo.order.OrderRepository;
+import com.mikewoe.springrestdemo.order.Status;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
